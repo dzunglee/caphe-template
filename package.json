@@ -1,0 +1,10 @@
+{
+  "name": "caphe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "css": "node-sass css/style.sass -o dist",
+    "css:watch": "npm run css && node-sass css/style.sass -wo css"
+  }
+}
