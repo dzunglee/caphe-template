@@ -1,0 +1,184 @@
+body
+    font-family: Arial
+    font-size: 13px
+    color: #333
+    font-weight: normal
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.navbar
+    background-color: #004370
+    color: #fff
+    padding: 0
+    width: 100%
+    .navbar-nav
+        position: relative
+        margin-left: 0
+    .nav-link
+        color: #fefefe!important
+        font-family: Roboto,Arial,Helvetica,sans-serif
+        font-weight: 500
+        font-size: 12px
+
+.text-uppercase
+    letter-spacing: 0.08em
+.dropdown-menu
+    display: block
+    visibility: hidden
+    opacity: 0
+    transition: .5s ease all
+    width: 100%
+
+    &.show
+        display: block
+        visibility: visible
+        opacity: 1
+        transition: .5s ease all
+        height: auto
+.navbar-nav
+    .btn-home
+        padding: 2px 8px!important
+        background-color: #0064a6
+        a
+            background-position: -75px -30px
+            width: 18px
+            height: 15px
+            display: block
+            margin: 8px 0 0
+            background-image: url(/img/sprite_cafef_v18.webp) !important
+            background-repeat: no-repeat
+            background-size: auto !important
+.header
+    margin-top: 10px
+    .logo
+        a
+            background-position: 0 0
+            width: 160px
+            height: 28px
+            display: block
+            background-image: url(/img/sprite_cafef_v18.webp) !important
+            background-repeat: no-repeat
+            background-size: auto !important
+            padding-top: 10px
+.icon_menu_right
+    width: 30px
+    padding: 0 5px
+    .bt_cut
+        font-size: 15px
+        position: relative
+        display: block
+        outline: none
+        width: 20px
+        margin: auto
+        span
+            display: block
+            width: 4px
+            height: 4px
+            background: #fff
+            border-radius: 100px
+            -webkit-border-radius: 100px
+            -moz-border-radius: 100px
+            visibility: visible
+            opacity: 1
+            transition: all .3s
+            -webkit-transition: all .3s
+            -moz-transition: all .3s
+            position: absolute
+            top: 15px
+        .ei-line1
+            left: 0
+        .ei-line2
+            left: 8px
+        .ei-line3
+            right: 0
+    &.show
+        .bt_cut
+            .ei-line1
+                height: 20px
+                transform: rotate(-135deg)
+                top: 7px
+                left: 9px
+                width: 3px
+            .ei-line2
+                left: 8px
+            .ei-line3
+                top: 7px
+                right: 8px
+                height: 20px
+                transform: rotate(135deg)
+                width: 3px
+.mega-menu
+    margin-top: 0
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+    padding: 20px 0
+    border: none
+    box-shadow: 0 0 5px 1px #0000004d
+    .dropdown-header
+        font-family: Roboto, "Helvetica Neue", Helvetica, Arial
+        font-size: 16px
+        color: inherit
+        font-weight: 700
+        padding: 0 15px
+        padding-left: 0
+    .dropdown-item
+        font-size: 13px
+        color: #535353
+        line-height: 30px
+        font-family: Roboto
+        padding: 0 15px
+        padding-left: 0
+.nav-fill .nav-item
+    padding: 2px 0
+
+footer
+    background-color: #f2f4f8
+    p
+        margin-bottom: 2px
+    b
+        ont-family: Roboto
+        color: #282828
+        font-size: 14px
+        margin-bottom: 15px
+        display: block
+a
+    color: #004370
+    font-family: Roboto
+    font-weight: 500
+
+@media only screen and (min-width: 768px)
+    footer
+        background-color: #f2f4f8
+    .bordered
+        border-left: 1px dotted #ccc
+        border-right: 1px dotted #ccc
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+    .navbar .nav-link
+        font-size: 10px
+@media only screen and (max-width: 991px)
+    .nav-fill .nav-item
+        text-align: left
+    .dropdown-menu
+        opacity: 1
+        visibility: visible
+        position: relative
+        background-color: inherit
+        color: inherit
+        border: none
+    .nav-item.icon_menu_right
+        width: 100%
+        padding: 0
+    .mega-menu
+        padding-top: 5px
+        .dropdown-header
+            margin-top: 10px
+            margin-bottom: 3px
+        .dropdown-item
+            color: #fefefe !important
+            &:hover
+                background-color: inherit
+                text-decoration: underline
+
+@media only screen and (max-width: 991px)
+    .nav-fill
+        padding: 0 1rem

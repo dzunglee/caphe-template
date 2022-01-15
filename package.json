@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "css": "node-sass css/style.sass -o dist",
-    "css:watch": "npm run css && node-sass css/style.sass -wo css"
+    "css": "node-sass sass/style.sass -o css",
+    "css:watch": "npm run css && node-sass sass/style.sass -wo css"
   }
 }
