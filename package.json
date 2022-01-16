@@ -5,6 +5,6 @@
   "license": "MIT",
   "scripts": {
     "css": "node-sass sass/style.sass -o css",
-    "css:watch": "npm run css && node-sass sass/style.sass -wo css"
+    "css:watch": "npm run css && node-sass sass/*.sass -wo css"
   }
 }
